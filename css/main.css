@@ -75,12 +75,13 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 15px 0;
 }
 .attribution a {
   color: hsl(271, 100%, 64%);
 }
 @media (min-width: 992px) {
-  .container {
+  .b-cont {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -113,5 +114,8 @@ body {
   }
   .container .box3 {
     padding: 20px;
+  }
+  .attribution{
+    font-size: 10px;
   }
 }
