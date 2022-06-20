@@ -1,0 +1,117 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--Very-light-gray);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box1 {
+  background-color: var(--Bright-orange);
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container .box2 {
+  background-color: var(--Dark-cyan);
+  padding: 40px;
+}
+.container .box3 {
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 40px;
+}
+.container .logo {
+  margin: 25px 25px 25px 0;
+}
+.container .header {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  color: var(--Very-light-gray);
+  text-transform: uppercase;
+}
+.container p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--Transparent-white);
+  width: 200px;
+  margin: 20px 30px 80px 0;
+}
+.container button {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: var(--Very-light-gray);
+  border-color: var(--Very-light-gray);
+  border-style: solid;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.container button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.container .b1:hover {
+  color: var(--Bright-orange);
+  transition: .25s;
+}
+.container .b2:hover {
+  color: var(--Dark-cyan);
+  transition: .25s;
+}
+.container .b3:hover{
+  color: var(--Very-dark-cyan);
+  transition: .25s;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(271, 100%, 64%);
+}
+@media (min-width: 992px) {
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .box1 {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .container .box3 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .container p {
+    margin: 20px 30px 40px 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .container .box1 {
+    padding: 20px;
+  }
+  .container .box2 {
+    padding: 20px;
+  }
+  .container .box3 {
+    padding: 20px;
+  }
+}
